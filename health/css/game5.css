@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(23, 11, 90); 
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(215, 65, 172);
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color:deeppink;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(247, 59, 160);
+    font-size: 45px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card.flipped {
+    background-color:#fff;
+    color: #000;
+}
+
+.card.matched {
+    background-color: rgb(149, 139, 206);
+    pointer-events: none;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color:#fff ; 
+    text-shadow: rgb(255, 20, 147);
+}
+
+p{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    max-width: 600px;
+    font-size: larger;
+    padding: 5px;
+}
+
+.bloqueo{
+    color: deeppink;
+}
+
+.señales{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 160px;
+}
+
+.señales h3{
+    margin: 40px;
+    color: rgb(247, 59, 160);
+    max-width: 600px;
+    font-size: larger;
+}
+.señales ul{
+    margin: 40px;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.arrow{
+    color: rgb(247, 59, 160);
+}

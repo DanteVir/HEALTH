@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(23, 11, 90); 
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(215, 65, 172);
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color:#fff ; 
+    text-shadow: rgb(255, 20, 147);
+}
+
+p{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    max-width: 600px;
+    font-size: larger;
+}
+
+.bipo{
+    color: deeppink;
+}
+
+.fases h3{
+    position: relative;
+    margin: 40px;
+    color: rgb(247, 59, 160);
+    max-width: 600px;
+    font-size: larger;
+}
+.fases ul{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    font-size: larger;
+    width: 600px;
+}
+
+.arrow{
+    color: rgb(247, 59, 160);
+}
+
+.video1{
+    position: absolute;
+    margin: 70px;
+    top: 0;
+    right: 170px;
+    padding: 5px;
+    border-radius: 50px;
+}

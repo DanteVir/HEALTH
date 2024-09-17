@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body {
+    background-color: rgb(23, 11, 90);
+}
+
+.sidebar{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: deeppink;
+    padding: 6px 14px;
+    transition: .5ps;
+}
+
+.sidebar.active {
+    width: 260px;
+}
+
+.sidebar .logo-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.sidebar .logo-menu .logo{
+    font-size: 25px;
+    color: #ffff;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s;
+    
+}
+
+.sidebar.active .logo-menu .logo{
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.sidebar .logo-menu .toggle-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ffff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sidebar.active .logo-menu .toggle-btn{
+    left: 90%;
+}
+
+.sidebar .list{
+    margin-top: 10px;
+}
+
+.list .list-item{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    line-height: 50px;
+}
+
+.list .list-item a{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s;
+   
+}
+
+.list .list-item a:hover {
+     background: rgba(255, 255, 255, .2);
+}
+
+.list .list-item a i{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .link-name{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+}
+
+.sidebar.active .link-name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(215, 65, 172);
+}
+
+.important{
+    margin: 200px;
+    color: #ffff;
+    text-align: center;
+    font-size: larger;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    width: 700px;
+    right: 300px;
+    position: absolute;
+}
+ 
+.text{
+    color: deeppink;
+    font-size:larger;
+    padding: 10px;
+
+}
+
+

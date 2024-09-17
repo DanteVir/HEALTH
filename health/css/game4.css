@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(23, 11, 90); 
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(215, 65, 172);
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color:#fff ; 
+    text-shadow: rgb(255, 20, 147);
+}
+
+p{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    max-width: 600px;
+    font-size: larger;
+}
+
+.auto{
+    color: deeppink;
+}
+
+.sintomas h3{
+    position: relative;
+    margin: 40px;
+    color: rgb(247, 59, 160);
+    max-width: 600px;
+    font-size: larger;
+}
+.sintomas ul{
+    position: relative;
+    margin: 30px;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.arrow{
+    color: rgb(247, 59, 160);
+}
+
+.tips {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    margin: 155.5px; 
+    padding: 0;
+    max-width: 600px;
+}
+
+.tips h3{
+    color: rgb(247, 59, 160);
+    font-size: larger;
+    margin: 30px;
+}
+.tips ul{
+    color: aliceblue;
+    font-size: larger;
+    margin: 30px;
+}
+
+.good a {
+
+    background-color: rgb(247, 59, 160); 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    margin:50px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    transition: background-color 0.3s; 
+}
+
+.good a:hover {
+    background-color:deeppink; 
+}

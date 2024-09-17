@@ -1,0 +1,360 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(23, 11, 90); 
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+   
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(215, 65, 172);
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color:#fff ; 
+    text-shadow: rgb(255, 20, 147);
+}
+
+p{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    max-width: 600px;
+    font-size: larger;
+}
+
+.ataque{
+    color: deeppink;
+}
+
+.sintomas h3{
+    position: relative;
+    margin: 40px;
+    color: rgb(247, 59, 160);
+    max-width: 600px;
+    font-size: larger;
+}
+.sintomas ul{
+    position: relative;
+    margin: 40px;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.arrow{
+    color: rgb(247, 59, 160);
+}
+
+.chocolate-box{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.chocolate-box:before, .chocolate-box:after{
+    content: "";
+    position: absolute;
+}
+
+.chocolate-box:before{
+    width: 160px;
+    height: 160px;
+    background-color: #4b301b;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 10px 10px #392312;
+}
+
+.chocolate-box:after{
+    width: 68px;
+    height: 68px;
+    background-color: #2b0900;
+    top: 81px;
+    left: 80px;
+    box-shadow: 70px 0 #2b0900, 70px 70px #2b0900, 0 70px #2b0900;
+}
+
+.chocs{
+    position: absolute;
+    z-index: 1;
+}
+
+.top-left{
+    top:92px;
+    left: 90px;
+}
+
+.top-left, .bottom-right{
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #d12511;
+    box-shadow: 20px 0 #d12511;
+    filter: drop-shadow(2px 2px #ab1503) drop-shadow(-2px 2px #ab1503 );
+    transition: .2s;
+}
+
+.bottom-right{
+    left: 162px;
+    top: 162px;
+}
+
+.top-left:before, .bottom-right:before, .top-left:after, .bottom-right:after{
+    position: absolute;
+    content: "";
+}
+
+.top-left:before, .bottom-right:before{
+    width:30px;
+    height: 30px;
+    background-color: #d12511;
+    transform:rotate(-45deg);
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-right:hover{
+    transform: rotate(25deg);
+}
+
+.top-left:hover{
+    transform: rotate(25deg);
+}
+
+.bottom-right:active{
+    opacity: 0;
+}
+
+.top-left:active{
+    opacity: 0;
+}
+
+.top-left:after, .bottom-right:after{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 35px;
+}
+
+.top-right{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fee8c0; 
+    width: 45px;
+    height: 45px;
+    top: 92px;
+    left: 162px;
+    filter: drop-shadow(2px 2px #ceb587) drop-shadow(-2px 2px #ceb587);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.top-right:before, .top-right:after{
+    content: "";
+    position: absolute;
+    background-color: #93522b;
+    width: 100px;
+    height: 3px;
+    left: -5px;
+}
+
+.top-right:before{
+    top: 15px;
+    transform: rotate(-35deg);
+    box-shadow: 0 -15px #93522b;
+}
+
+.top-right:after{
+    top: 0;
+    transform: rotate(-15deg);
+    box-shadow: 0 17px #93522b, 0 30px #93522b;
+}
+.top-right:hover{
+    transform: rotate(25deg);
+}
+
+.top-right:active{
+    opacity: 0;
+}
+
+.bottom-left{
+    position: absolute;
+    border-radius:50%;
+    background-color: #503520;
+    width: 45px;
+    height: 45px;
+    top: 162px;
+    left: 92px;
+    filter: drop-shadow(2px 2px #342010) drop-shadow(-2px 2px #342010);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.bottom-left:before, .bottom-left:after{
+    content: "";
+    position: absolute;
+    background-color: #fde7c7;
+    width: 100px;
+    height: 3px;
+    left: -5px;
+}
+
+.bottom-left:hover{
+    transform: rotate(25deg);
+}
+
+.bottom-left:active{
+    opacity: 0;
+}
+
+.bottom-left::before{
+    top: 15px;
+    transform: rotate(-35deg);
+    box-shadow: 0 -15px #fde7c7;
+}
+
+.bottom-left:after{
+    top: 0;
+    transform: rotate(-15deg);
+    box-shadow: 0 17px #fde7c7;
+}
+
+.box-bottom{
+    position: absolute;
+    background-color: #392312;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    left: 222px;
+    top: 73px;
+    z-index: 1;
+    box-shadow: 0 211px #392312;
+}
+
+.cover{
+    position: absolute;
+    background-color: #ff94b4;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ff94b4;
+    z-index: 2;
+    top: 70px;
+    left: 70px;
+    transform-origin: top;
+    transition: .2s;
+    overflow: hidden;
+}
+
+
+.chocolate-box:hover .cover{
+    transform: rotateX(170deg);
+    box-shadow: 5px -5px 20px rgba(0, 0, 0, .5);
+}
+
+.chocolate-box:hover.cover:before{
+    display: none;
+}
+
+.cover:before{
+    position: absolute;
+    content: "♡Hover Me♡";
+    color: #ffead2;
+    font-family: "Brush Script MT", cursive;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 35px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 2px double;
+}
+
+.cover:after{
+    position: absolute;
+    content: "";
+    background-color: #ffead2;
+    height: 10px;
+    width: 100px;
+    transform: rotate(-45deg);
+    left: -20px;
+    box-shadow: -5px 165px #ffead2;
+}
+
+#white,#milk,#truffle, #truffle2{
+    position: absolute;
+    width: 100%;
+    color: #ffead2;
+    font-size: 25px;
+    transition: .1s;
+    display: none;
+    
+}
+
+#milk{
+    top: 170px;
+    left: -70px;
+
+}
+
+#white{
+    top: 100px;
+    left: 250px; 
+
+}
+
+#truffle{
+    left: 250px;
+    top: 170px;
+
+}
+
+#truffle2{
+    left: -80px;
+    top: 100px;
+
+}
+
